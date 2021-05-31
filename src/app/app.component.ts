@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portifolio';
+  crudUrl = 'https://api-cars-frontend.herokuapp.com'
+  dashboardUrl = 'https://demo-real-time-dashboard.herokuapp.com'
+
 }

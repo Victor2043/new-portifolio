@@ -1,5 +1,6 @@
 <body>
   <header>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <div class="menu">
       <p>
         <a href="#Sobre mim">Sobre mim</a>&nbsp;
@@ -17,20 +18,23 @@
             <div id="aboutMeImgWrapper">
               <img src="../assets/eu.jpeg" id="imgId">
             </div>
-            <div style="margin-top: 3%; text-align: center; width: 250px; height: 100px; margin: 0 auto;">
+            <div class="aboutMeText">
               <p style="font-size: 26px;"><b>Victor Alves Mendes</b></p>
               <p>Desenvolvedor Junior</p>
               <p>22 Anos, São Paulo - SP</p>
               <p>Victor.alves19@outlook.com.br</p>
+              <p>https://github.com/Victor2043</p>
             </div>
         </div>
         <div class="aboutMeBox">
           <div id="aboutMeTextWrapper">
             <ul>
-              <li> <p style="font-size: 15px;">Paulista, formado em analíse e desenvolvimento de sistemas pela UNICSUL - 2020, desde cedo sou
+              <li> 
+                <p style="font-size: 15px;">Paulista, formado em analíse e desenvolvimento de sistemas pela UNICSUL - 2020, desde cedo sou
               apaixonado por técnologia atuei uns anos em montagem e manutênção de computadores até conhecer a programação em 2017,
               embusca de novos desafios, sou focado e sempre curioso para aprender novas tecnologias ou resolver problemas de diferentes formas.
-            </p></li>
+                </p>
+              </li>
             </ul> 
            
           </div>
@@ -38,70 +42,121 @@
       </div>
     </div>
   </div>
+  <div class="floatDiv"></div>
   <div class="container"  id="Experiência">
     <div style="margin: 2%;">
       <h1>Experiência </h1>
-        <div style=" height: 100px; border-radius: 10px;">
-          <div style="height: 30%; background-color: #c1c9d2;">
-            <h3 style="color: black;">Be3 Health Tech</h3>
+        <div class="companyNameWrapper">
+          <div class="companyName">
+            <h3 style="color: black;"><b>Be3 Health Tech</b></h3>
           </div>
-          <mat-card style="width: auto; position: relative; color:white; background-color: #2a2f45;">
-              <p>1 ano e 3 meses de experiência como desenvolvendor, em metodologia ágil - Scrum 
-                ,dando manutênção em aplicações/api's já existentes e participando de novos projetos</p>
+          <mat-card>
+              <p >1 ano e 3 meses de experiência como desenvolvendor, em metodologia ágil - Scrum 
+                ,dando manutênção em aplicações/api's já existentes e participando de novos projetos
+              </p>
+              <ul>
+                <li>Criação e manutenção de layouts e funcionalidades no front com angular</li>
+                <li>Api com python e flask para chamar scripts RPA com selenium, selenoid e docker</li>
+                <li>Desenvolvimento de funcionalidades no backend com C# seguindo pattern DDD</li>
+                <li>Criação de procedures com sql server</li>
+              </ul>
           </mat-card>
+          <div class="iconsContainer">
+            <div style="width: 90%; margin: 0 auto; display: flex;">
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/python.ico" class="icon">
+                </div>
+              </div>
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/c-sharp.ico" class="icon">
+                </div>
+              </div>
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/angular.ico" class="icon">
+                </div>
+              </div>
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/selenium.ico" class="icon">
+                </div>
+              </div>
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/node.ico" class="icon">
+                </div>
+              </div>
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/docker.ico" class="icon">
+                </div>
+              </div>
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/git.ico" class="icon">
+                </div>
+              </div>
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/sql_server.ico" class="icon">
+                </div>
+              </div>
+              <div class="iconWrapper">
+                <div class="iconBox">
+                  <img src="../assets/flask.ico" class="icon">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
-  </div><br>
+  </div>
+  <div class="floatDiv"></div>
   <div class="container" id="Projetos">
     <div style="margin: 2%;">
       <h1>Projetos </h1>
         <p>Test text</p>
         <div class="projectsAlign">
           <div class="projectBox">
-            <h2>Dashboard em tempo real</h2>
-              <p>Um dashboard simples, mostrando o poder do websockets com dados em tempo real</p>
-              <div style="margin: 0 auto; width: 300px; height: 100px; border-radius: 10px; background-color: #2a2f45;">
-                <div style="height: 30%; background-color: #c1c9d2;">URL</div>
-                <div ><p>https://demo-real-time-dashboard.herokuapp.com/</p></div>
-              </div>
-              
-                <div class="gifContainer">
-                    <img src="../assets/grafico.gif">
+            <h2>CRUD - API</h2>
+              <p>Um crud se utilizando dos métodos de uso de API: GET, POST, PUT, DELETE</p>
+              <div class="projectDescription">
+                <div class="projectDescriptionTitle">URL</div>
+                <div style="display: flex;">
+                  <div style="width: 92%; margin-top: 12px;"><p>{{crudUrl}}</p></div>
+                  <div>
+                    <button matTooltip="Copiar"  matTooltipPosition="above" [cdkCopyToClipboard]="crudUrl">
+                    <mat-icon>file_copy</mat-icon></button>
+                  </div>
                 </div>
-            </div>
-            <div class="projectBox">
-              <h2>Chat</h2>
-              <p>Poder do websockets</p>
-              <div style="margin: 0 auto; width: 300px; height: 100px; border-radius: 10px; background-color: #2a2f45;">
-                <div style="height: 30%; background-color: #c1c9d2;">URL</div>
-                <div ><p>https://justachat.herokuapp.com/</p></div>
-              </div>
-            </div>
-      </div>
-      <div class="projectsAlign">
-        <div class="projectBox">
-          <h2>Dashboard em tempo real</h2>
-            <p>Um dashboard simples, mostrando o poder do websockets com dados em tempo real</p>
-            <div style="margin: 0 auto;  width: 300px; height: 100px; border-radius: 10px; background-color: #2a2f45;">
-              <div style="height: 30%; background-color: #c1c9d2;">URL</div>
-              <div ><p>https://demo-real-time-dashboard.herokuapp.com/</p></div>
-            </div>
-            <!-- style="border-bottom: solid #3c4257 0.5px;  -->
+              </div><br>
               <div class="gifContainer">
-                  <img src="../assets/grafico.gif">
+                  <img src="../assets/crud.gif" id="imgId">
               </div>
           </div>
           <div class="projectBox">
-            <h2>Chat</h2>
-            <p>Poder do websockets</p>
-            <div style="margin: 0 auto; width: 300px; height: 100px; border-radius: 10px; background-color: #2a2f45;">
-              <div style="height: 30%; background-color: #c1c9d2;">URL</div>
-              <div ><p>https://justachat.herokuapp.com/</p></div>
-            </div>
+            <h2>Dashboard em tempo real</h2>
+              <p>Um dashboard mostrando o poder do websockets com dados em tempo real</p>
+              <div class="projectDescription">
+                <div class="projectDescriptionTitle">URL</div>
+                <div style="display: flex;">
+                  <div style="width: 92%; margin-top: 12px;"><p>{{dashboardUrl}}</p></div>
+                  <div>
+                    <button matTooltip="Copiar"  matTooltipPosition="above" [cdkCopyToClipboard]="dashboardUrl">
+                    <mat-icon>file_copy</mat-icon></button>
+                  </div>
+                </div>
+              </div><br>
+              <div class="gifContainer">
+                  <img src="../assets/grafico.gif" id="imgId">
+              </div>
           </div>
+        </div>
     </div>
-    </div>
-  </div><br>
+  </div>
+  <div class="floatDiv"></div>
   <div class="container" id="Acadêmico">
     <div style="height: auto; margin: 2%;">
       <h1>Acadêmico </h1>
@@ -110,7 +165,7 @@
           <div class="studentImgWrapper">
             <img src="../assets/universidade.png " id="imgId">
           </div>
-          <div style=" margin: 2%; width: auto; height: auto; ">
+          <div class="studentCourseInfo">
             <ul>
               <li><p><b>Superior Completo</b></p></li>
               <li><p>Analíse e desenvolvimento de sistemas</p></li>
@@ -121,7 +176,7 @@
           <div class="studentImgWrapper">
             <img src="../assets/desenvolvedor-io.png " id="imgId">
           </div>
-          <div style=" margin: 2%; width: auto; height: auto; ">
+          <div class="studentCourseInfo">
             <ul>
               <li><p><b>Desenvolvedor.io</b></p></li>
               <li><p>Fundamentos de Arquitetura de Software</p></li>
@@ -130,23 +185,12 @@
         </div>
         <div class="studentItem">
           <div class="studentImgWrapper">
-            <img src="../assets/desenvolvedor-io.png " id="imgId">
+            <img src="../assets/udemy.png" id="imgId">
           </div>
-          <div style=" margin: 2%; width: auto; height: auto;  ">
-            <ul>
-              <li><p><b>Desenvolvedor.io</b></p></li>
-              <li><p>--------- ------------ --  -----</p></li>
-            </ul>
-          </div>
-        </div>
-        <div class="studentItem" >
-          <div class="studentImgWrapper">
-            <img src="../assets/udemy.png " id="imgId">
-          </div>
-          <div style="margin: 2%; width: auto; height: auto;">
+          <div class="studentCourseInfo">
             <ul>
               <li><p><b>Udemy</b></p></li>
-              <li><p>TensorFlow: Machine Learning e Deep Learning com Python</p></li>
+              <li><p>TensorFlow: Machine Learning e Deep Learning</p></li>
             </ul>
           </div>
         </div>
@@ -155,9 +199,10 @@
   </div>
   
 
-  <footer style="width: 100%; height: 50px; text-align: center;"><p>© Victor Alves Mendes - 2020</p></footer>
+  <footer ><p>© Victor Alves Mendes - 2020</p></footer>
   
 </body>
+
 <!-- 
 <mat-tab-group > 
     <mat-tab label="First"  > 
@@ -168,3 +213,5 @@
     <mat-tab label="Third"> Content 3 </mat-tab>
   </mat-tab-group>
   style="background-color: #1a1f36; color: #6c8eef;" -->
+
+             <!-- style="border-bottom: solid #3c4257 0.5px;  -->

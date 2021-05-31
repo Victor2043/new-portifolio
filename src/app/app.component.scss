@@ -1,9 +1,12 @@
+*{
+    font-family: "Hiragino Sans","Yu Gothic UI","Meiryo UI","Hiragino Kaku Gothic ProN";
+}
+
 body{
     scroll-behavior: smooth; 
     background-color: #1a1f36; 
     overflow-y: scroll;
-    font-family: "Hiragino Sans","Yu Gothic UI","Meiryo UI","Hiragino Kaku Gothic ProN";
-}
+    }
 
 header{
     position: fixed; 
@@ -20,11 +23,17 @@ header{
 }
 
 .container{
-    margin: 0 auto; 
+    margin: 0 auto 2%; 
     width: 90%; 
     height: auto; 
     border-left: solid 1px;
-    margin-top: 10%
+    margin-top: 10%;
+}
+
+.floatDiv{
+    width: 70%; 
+    margin: 0 auto; 
+    border-top: double 1px #2f3d89;
 }
 
 .aboutMe{
@@ -34,7 +43,7 @@ header{
 
 .aboutMeBox{
     width: 50%; 
-    height: 300px; 
+    height: 350px; 
 }
 
 #aboutMeImgWrapper{
@@ -47,7 +56,7 @@ header{
 #imgId{
     height: 100%; 
     width: 100%; 
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 #aboutMeTextWrapper{
@@ -55,6 +64,54 @@ header{
     width: 80%; 
     height: 80%; 
     margin: 2% 0 0 2%;
+}
+
+.aboutMeText{
+    text-align: center; 
+    width: 250px; 
+    height: 100px; 
+    margin: 0 auto;
+    margin-top: 2%; 
+}
+
+.companyNameWrapper{
+    height: auto; 
+    border-radius: 10px;
+}
+
+.companyName{
+    height: 30px;
+    background-color: #c1c9d2;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.iconsContainer{
+    height: auto;
+}
+
+.iconBox{
+    margin: 10px auto 0 2%; 
+    width: 65%;
+    height: 70%;
+}
+
+.iconWrapper{
+    width: 10%;
+}
+
+.icon{
+    width: 100%;
+    height: 100%;
+}
+
+mat-card{
+    width: auto; 
+    position: relative; 
+    color:white; 
+    background-color: #2a2f45;
 }
 
 .projectsAlign{
@@ -67,6 +124,28 @@ header{
     text-align: center; 
 }
 
+.projectDescription{
+    margin: 0 auto; 
+    width: 400px; 
+    height: 70px;
+    border-radius: 10px; 
+    background-color: #2a2f45;
+}
+
+.projectDescriptionTitle{
+    height: 30%; 
+    background-color: #c1c9d2; 
+    color: black;
+}
+
+button{
+    height: 48px; background-color: #2f3d89; color: #c1c9d2;
+}
+
+.gifContainer{
+    margin: 0 auto;
+    width: 400px;
+}
 
 
 a{
@@ -101,7 +180,7 @@ h2{
 
 .studentItem{
     display: flex;
-    width: 350px;
+    width: 450px;
     margin: 1% auto; 
     height: 150px; 
     border: solid 1px #2a2f45;   
@@ -109,13 +188,21 @@ h2{
 
 .studentImgWrapper{
     margin-top: 2%; 
-    width: 200px; 
+    width: 250px; 
     height: 80%; 
     margin: 2%;
 }
 
+.studentCourseInfo{
+    margin: 2%; 
+    word-wrap: break-word;
+}
+
 footer{
     border-top: solid 1px #212d63;
+    width: 100%; 
+    height: 50px; 
+    text-align: center;
 }
 
 
@@ -138,8 +225,6 @@ footer{
         border-top: solid #2a2f45;
         margin: 0 auto;
         text-align: center;
-        
-        
     }
 
     .projectsAlign{
@@ -150,7 +235,10 @@ footer{
         width: 100%; 
     }
 
-    
+    .studentImgWrapper{
+        width: 200px; 
+    }
+
     
   }
 
