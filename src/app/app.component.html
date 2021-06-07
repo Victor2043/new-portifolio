@@ -42,7 +42,84 @@
       </div>
     </div>
   </div>
-  <div class="floatDiv"></div>
+  <div class="container" id="Projetos">
+    <div style="margin: 2%;">
+      <h1>Aplicações </h1>
+        <!-- <p>Test text</p> -->
+        <div class="projectsAlign">
+          <div class="projectBox">
+            <h2>E-commerce</h2>
+              <p>Seja bem vindo a comprar o que quiser no meu mini e-commerce :D</p>
+              <div class="projectDescription">
+                <div class="projectDescriptionTitle">URL</div>
+                <div style="display: flex;">
+                  <div style="width: 92%; margin-top: 12px;"><p>{{ecommerceUrl}}</p></div>
+                  <div>
+                    <button matTooltip="Copiar"  matTooltipPosition="above" [cdkCopyToClipboard]="crudUrl">
+                    <mat-icon>file_copy</mat-icon></button>
+                  </div>
+                </div>
+              </div><br>
+              <div class="gifContainer">
+                  <img src="../assets/e-commerce.gif" id="imgId">
+              </div>
+          </div>
+          <div class="projectBox">
+            <h2>Chat</h2>
+              <p>Envie o link para alguem e use o chat :D</p>
+              <div class="projectDescription">
+                <div class="projectDescriptionTitle">URL</div>
+                <div style="display: flex;">
+                  <div style="width: 92%; margin-top: 12px;"><p>{{chatUrl}}</p></div>
+                  <div>
+                    <button matTooltip="Copiar"  matTooltipPosition="above" [cdkCopyToClipboard]="dashboardUrl">
+                    <mat-icon>file_copy</mat-icon></button>
+                  </div>
+                </div>
+              </div><br>
+              <div class="gifContainer">
+                  <img src="../assets/chat.gif" id="imgId">
+              </div>
+          </div>
+        </div>
+        <div class="projectsAlign">
+          <div class="projectBox">
+            <h2>CRUD - API</h2>
+              <p>Um crud se utilizando dos métodos de uso de API: GET, POST, PUT, DELETE</p>
+              <div class="projectDescription">
+                <div class="projectDescriptionTitle">URL</div>
+                <div style="display: flex;">
+                  <div style="width: 92%; margin-top: 12px;"><p>{{crudUrl}}</p></div>
+                  <div>
+                    <button matTooltip="Copiar"  matTooltipPosition="above" [cdkCopyToClipboard]="crudUrl">
+                    <mat-icon>file_copy</mat-icon></button>
+                  </div>
+                </div>
+              </div><br>
+              <div class="gifContainer">
+                  <img src="../assets/crud.gif" id="imgId">
+              </div>
+          </div>
+          <div class="projectBox">
+            <h2>Dashboard em tempo real</h2>
+              <p>Um dashboard mostrando o poder do websockets com dados em tempo real</p>
+              <div class="projectDescription">
+                <div class="projectDescriptionTitle">URL</div>
+                <div style="display: flex;">
+                  <div style="width: 92%; margin-top: 12px;"><p>{{dashboardUrl}}</p></div>
+                  <div>
+                    <button matTooltip="Copiar"  matTooltipPosition="above" [cdkCopyToClipboard]="dashboardUrl">
+                    <mat-icon>file_copy</mat-icon></button>
+                  </div>
+                </div>
+              </div><br>
+              <div class="gifContainer">
+                  <img src="../assets/grafico.gif" id="imgId">
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
   <div class="container"  id="Experiência">
     <div style="margin: 2%;">
       <h1>Experiência </h1>
@@ -113,50 +190,6 @@
         </div>
     </div>
   </div>
-  <div class="floatDiv"></div>
-  <div class="container" id="Projetos">
-    <div style="margin: 2%;">
-      <h1>Aplicações </h1>
-        <!-- <p>Test text</p> -->
-        <div class="projectsAlign">
-          <div class="projectBox">
-            <h2>CRUD - API</h2>
-              <p>Um crud se utilizando dos métodos de uso de API: GET, POST, PUT, DELETE</p>
-              <div class="projectDescription">
-                <div class="projectDescriptionTitle">URL</div>
-                <div style="display: flex;">
-                  <div style="width: 92%; margin-top: 12px;"><p>{{crudUrl}}</p></div>
-                  <div>
-                    <button matTooltip="Copiar"  matTooltipPosition="above" [cdkCopyToClipboard]="crudUrl">
-                    <mat-icon>file_copy</mat-icon></button>
-                  </div>
-                </div>
-              </div><br>
-              <div class="gifContainer">
-                  <img src="../assets/crud.gif" id="imgId">
-              </div>
-          </div>
-          <div class="projectBox">
-            <h2>Dashboard em tempo real</h2>
-              <p>Um dashboard mostrando o poder do websockets com dados em tempo real</p>
-              <div class="projectDescription">
-                <div class="projectDescriptionTitle">URL</div>
-                <div style="display: flex;">
-                  <div style="width: 92%; margin-top: 12px;"><p>{{dashboardUrl}}</p></div>
-                  <div>
-                    <button matTooltip="Copiar"  matTooltipPosition="above" [cdkCopyToClipboard]="dashboardUrl">
-                    <mat-icon>file_copy</mat-icon></button>
-                  </div>
-                </div>
-              </div><br>
-              <div class="gifContainer">
-                  <img src="../assets/grafico.gif" id="imgId">
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-  <div class="floatDiv"></div>
   <div class="container" id="Acadêmico">
     <div style="height: auto; margin: 2%;">
       <h1>Acadêmico </h1>
